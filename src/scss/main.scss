@@ -1,11 +1,61 @@
-$header-bg-color: #f3f3f3; // Light grey background
-$header-text-color: #333; // Dark text color
+$header-font-family: "League Spartan", sans-serif;
+$footer-paragraf-color: #a0a0a0;
 
-header {
-  background-color: $header-bg-color;
-  color: $header-text-color;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 30vh;
+  grid-gap: 2rem;
+}
+
+footer div {
+  padding: 4rem 1rem;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: $header-font-family;
+  letter-spacing: 10px;
+}
+
+footer p {
+  color: $footer-paragraf-color;
+  font-family: $header-font-family;
+  font-size: 16px;
+  padding-top: 1.5rem;
+  line-height: 1.5;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer div {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer h2 {
+    font-size: 12px;
+    letter-spacing: 6px;
+  }
 }
