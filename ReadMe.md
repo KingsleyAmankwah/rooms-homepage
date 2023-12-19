@@ -23,6 +23,8 @@
 
 Describe your project
 
+- Live Site URL: [Demo🚀🔥](https://rooms-homepage-two.vercel.app/)
+
 ## :sparkles: Features
 
 :heavy_check_mark: View the optimal layout for the site depending on their device's screen size;\
@@ -32,10 +34,6 @@ Describe your project
 ### Screenshot
 
 ![screenshot](https://github.com/KingsleyAmankwah/rooms-homepage/assets/64941442/1a8fb140-09df-45b7-b229-a52911bc7518)
-
-### Links
-
-- Live Site URL: [Demo🚀🔥](https://rooms-homepage-two.vercel.app/)
 
 ## :rocket: Technologies
 
