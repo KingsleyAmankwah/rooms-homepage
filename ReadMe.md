@@ -21,7 +21,7 @@
 
 ## :dart: About
 
-Describe your project
+"Room Homepage" is an e-commerce homepage project designed to offer a seamless and responsive user experience across various devices. This project focuses on creating a visually appealing and functionally robust homepage for an e-commerce platform, emphasizing responsiveness, interactivity, and user-friendliness.
 
 - Live Site URL: [Demo🚀🔥](https://rooms-homepage-two.vercel.app/)
 
