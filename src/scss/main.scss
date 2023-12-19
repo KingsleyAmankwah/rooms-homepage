@@ -1,20 +1,217 @@
 $header-font-family: "League Spartan", sans-serif;
 $footer-paragraf-color: #a0a0a0;
+$dark-Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very-dark-gray: hsl(0, 0%, 27%);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-.container {
+.showcase {
+  display: flex;
+}
+
+.hero-section {
+  height: 70vh;
+  width: 60%;
+  background-image: url("../assets/desktop-image-hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.mobile-header {
+  display: none;
+}
+
+.mobile-navbar {
   position: relative;
 }
 
+.mobile-list {
+  position: absolute;
+  background-color: $White;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  z-index: 100;
+}
+.mobile-nav-list {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.mobile-nav-list li {
+  padding: 10px;
+  font-size: 20px;
+  font-family: $header-font-family;
+  font-weight: 700;
+  color: $Black;
+  cursor: pointer;
+}
+
+.overlay {
+  width: 100%;
+  height: auto;
+  background: #000;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.desktop-header {
+  display: flex;
+  gap: 11%;
+  padding: 4%;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 18%;
+  color: white;
+  font-size: 110%;
+  cursor: pointer;
+  font-family: $header-font-family;
+}
+
+.list-item:hover {
+  border-bottom: 2px solid $White;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  position: absolute;
+  bottom: 0px;
+  right: -9.6vw;
+  display: flex;
+}
+.btn {
+  padding: 30px;
+  background-color: black;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+.slider-text {
+  padding: 4.5%;
+  width: 40%;
+}
+.shop-now-btn {
+  margin-top: 6.8%;
+  display: flex;
+  gap: 14px;
+  font-family: $header-font-family;
+}
+.shop-now-btn:hover {
+  cursor: pointer;
+  opacity: 40%;
+}
+
+.shop-btn {
+  background: transparent;
+  padding: 0;
+  width: 150%;
+}
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.shop {
+  font-size: large;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-weight: 600;
+}
+.slider-title {
+  font-size: 300%;
+  margin-bottom: 4.5%;
+  line-height: 2.8rem;
+  font-weight: 700;
+  font-family: $header-font-family;
+}
+.slider-paragraph {
+  color: hsl(0, 0%, 63%);
+  line-height: 3vh;
+  font-size: 93%;
+  font-family: $header-font-family;
+}
+
+@media only screen and (max-width: 925px) {
+  .showcase {
+    display: block;
+  }
+  .slider-text {
+    width: 100%;
+    padding: 10%;
+  }
+
+  .right-section {
+    display: block;
+  }
+  .right-img {
+    width: 100%;
+  }
+  .hero-section {
+    width: 100%;
+  }
+  .desktop-header {
+    display: none;
+  }
+  .mobile-header {
+    padding: 9% 6%;
+    display: flex;
+  }
+  .button {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    display: flex;
+  }
+  .mobile2 {
+    background-image: url(../assets/images/mobile-image-hero-2.jpg);
+  }
+  .mobile3 {
+    background-image: url(../assets/images/mobile-image-hero-3.jpg);
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .hero-section {
+    background-image: url(../assets/mobile-image-hero-1.jpg);
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .button {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    display: flex;
+  }
+}
+
 footer {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 30vh;
   grid-gap: 2rem;
 }
 
@@ -27,7 +224,7 @@ footer h2 {
   font-size: 16px;
   font-weight: 700;
   font-family: $header-font-family;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
 }
 
 footer p {
@@ -43,7 +240,39 @@ footer img {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .slider-content {
+    flex-direction: column;
+  }
+
+  .slider-nav {
+    right: 0;
+    top: -260px;
+  }
+
+  nav .logo {
+    left: 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .slider-img {
+    width: 100%;
+  }
+
+  //   .slider-content {
+  //     flex-direction: column;
+  //     background-color: white;
+  //     width: 100%;
+  //   }
+
   footer {
     grid-template-columns: 1fr;
   }
@@ -57,5 +286,13 @@ footer img {
   footer h2 {
     font-size: 12px;
     letter-spacing: 6px;
+  }
+}
+
+// Hide the additional navbar on large screens
+@media screen and (min-width: 768px) {
+  // Adjust 768px as needed for your design
+  .additional-navbar {
+    display: none !important;
   }
 }
