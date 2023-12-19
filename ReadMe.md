@@ -31,7 +31,7 @@ Describe your project
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot](https://github.com/KingsleyAmankwah/rooms-homepage/assets/64941442/1a8fb140-09df-45b7-b229-a52911bc7518)
 
 ## :rocket: Technologies
 
