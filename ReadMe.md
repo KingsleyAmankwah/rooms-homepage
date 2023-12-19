@@ -33,11 +33,15 @@ Describe your project
 
 ![screenshot](https://github.com/KingsleyAmankwah/rooms-homepage/assets/64941442/1a8fb140-09df-45b7-b229-a52911bc7518)
 
+### Links
+
+- Live Site URL: [Demo🚀🔥](https://rooms-homepage-two.vercel.app/)
+
 ## :rocket: Technologies
 
 The following tools were used in this project:
 
-- [Sass](https://sass-lang.com/) for styles
+- [Sass](https://sass-lang.com/) - for styling
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## :white_check_mark: Requirements
@@ -62,9 +66,11 @@ $ npm start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: License
+## :memo:
 
 Made with :heart: by <a href="https://github.com/KingsleyAmankwah" target="_blank">Kingsley Amankwah</a>
+
+- LinkedIn - [Kingsley Amankwah](https://www.linkedin.com/in/kingsleyamankwah/)
 
 &#xa0;
 
