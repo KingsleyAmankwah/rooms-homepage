@@ -63,7 +63,6 @@ $ npm install
 # Run the project
 $ npm start
 
-# The server will initialize in the <http://localhost:3000>
 ```
 
 ## :memo:
