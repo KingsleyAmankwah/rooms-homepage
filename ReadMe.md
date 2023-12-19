@@ -67,9 +67,7 @@ $ npm start
 
 ## :memo:
 
-Made with :heart: by <a href="https://github.com/KingsleyAmankwah" target="_blank">Kingsley Amankwah</a>
-
-- LinkedIn - [Kingsley Amankwah](https://www.linkedin.com/in/kingsleyamankwah/)
+Made with :heart: by <a href="https://www.linkedin.com/in/kingsleyamankwah/" target="_blank">Kingsley Amankwah</a>
 
 &#xa0;
 
