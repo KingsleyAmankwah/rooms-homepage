@@ -267,12 +267,6 @@ footer img {
     width: 100%;
   }
 
-  //   .slider-content {
-  //     flex-direction: column;
-  //     background-color: white;
-  //     width: 100%;
-  //   }
-
   footer {
     grid-template-columns: 1fr;
   }
@@ -289,9 +283,7 @@ footer img {
   }
 }
 
-// Hide the additional navbar on large screens
 @media screen and (min-width: 768px) {
-  // Adjust 768px as needed for your design
   .additional-navbar {
     display: none !important;
   }
