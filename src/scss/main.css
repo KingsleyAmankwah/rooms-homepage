@@ -112,6 +112,21 @@
   width: 40%;
 }
 
+.slider-title {
+  font-size: 300%;
+  margin-bottom: 4.5%;
+  line-height: 2.8rem;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+}
+
+.slider-paragraph {
+  color: hsl(0, 0%, 63%);
+  line-height: 3vh;
+  font-size: 93%;
+  font-family: "League Spartan", sans-serif;
+}
+
 .shop-now-btn {
   margin-top: 6.8%;
   display: flex;
@@ -144,19 +159,36 @@ button {
   font-weight: 600;
 }
 
-.slider-title {
-  font-size: 300%;
-  margin-bottom: 4.5%;
-  line-height: 2.8rem;
-  font-weight: 700;
-  font-family: "League Spartan", sans-serif;
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
 
-.slider-paragraph {
-  color: hsl(0, 0%, 63%);
-  line-height: 3vh;
-  font-size: 93%;
+footer div {
+  padding: 4rem 1rem;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
   font-family: "League Spartan", sans-serif;
+  letter-spacing: 4px;
+}
+
+footer p {
+  color: #a0a0a0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  padding-top: 1.5rem;
+  line-height: 1.5;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 925px) {
@@ -201,6 +233,9 @@ button {
     background-image: url(../assets/mobile-image-hero-1.jpg);
     width: 100%;
   }
+  .slider-title {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .button {
@@ -210,38 +245,6 @@ button {
     display: flex;
   }
 }
-footer {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-}
-
-footer div {
-  padding: 4rem 1rem;
-}
-
-footer h2 {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "League Spartan", sans-serif;
-  letter-spacing: 4px;
-}
-
-footer p {
-  color: #a0a0a0;
-  font-family: "League Spartan", sans-serif;
-  font-size: 16px;
-  padding-top: 1.5rem;
-  line-height: 1.5;
-}
-
-footer img {
-  width: 100%;
-  height: 100%;
-}
-
 @media (max-width: 1024px) {
   .slider-content {
     flex-direction: column;
@@ -279,6 +282,17 @@ footer img {
 @media screen and (min-width: 768px) {
   .additional-navbar {
     display: none !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+  .button {
+    position: absolute;
+    bottom: 0px;
+    right: -148px;
+    display: flex;
   }
 }
 
