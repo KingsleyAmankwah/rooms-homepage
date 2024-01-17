@@ -72,16 +72,21 @@ $Very-dark-gray: hsl(0, 0%, 27%);
 
 .desktop-header {
   display: flex;
+  // justify-content: space-around;
+  align-items: center;
   gap: 11%;
-  padding: 4%;
+  padding: 7%;
 }
 .nav-items {
-  display: flex;
-  list-style: none;
-  gap: 18%;
   color: white;
-  font-size: 110%;
   cursor: pointer;
+  display: flex;
+  width: 244px;
+  height: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 31px;
+  flex-shrink: 0;
   font-family: $header-font-family;
 }
 
@@ -92,6 +97,9 @@ $Very-dark-gray: hsl(0, 0%, 27%);
 .logo {
   margin-left: auto;
   margin-right: auto;
+  width: 61.716px;
+  height: 13.056px;
+  // flex-shrink: 0;
 }
 .button {
   position: absolute;
@@ -112,17 +120,21 @@ $Very-dark-gray: hsl(0, 0%, 27%);
 }
 
 .slider-title {
-  font-size: 300%;
+  font-size: 48px;
   margin-bottom: 4.5%;
   line-height: 2.8rem;
   font-weight: 700;
   font-family: $header-font-family;
 }
 .slider-paragraph {
-  color: hsl(0, 0%, 63%);
-  line-height: 3vh;
-  font-size: 93%;
   font-family: $header-font-family;
+  color: #a0a0a0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.333px;
+  width: 400px;
 }
 
 .shop-now-btn {
@@ -149,7 +161,7 @@ button {
 }
 
 .shop {
-  font-size: large;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-weight: 600;
@@ -218,21 +230,27 @@ footer img {
     right: 0;
     display: flex;
   }
-  .mobile2 {
-    background-image: url(../assets/images/mobile-image-hero-2.jpg);
-  }
-  .mobile3 {
-    background-image: url(../assets/images/mobile-image-hero-3.jpg);
-  }
+  // .mobile2 {
+  //   background-image: url(../assets/images/mobile-image-hero-2.jpg);
+  // }
+  // .mobile3 {
+  //   background-image: url(../assets/images/mobile-image-hero-3.jpg);
+  // }
 }
 
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 600px) {
   .hero-section {
-    background-image: url(../assets/mobile-image-hero-1.jpg);
+    // background-image: url(../assets/mobile-image-hero-1.jpg);
     width: 100%;
   }
   .slider-title {
-    font-size: 3rem;
+    font-size: 40px;
+    line-height: normal;
+    letter-spacing: -1.667px;
+  }
+
+  .slider-paragraph {
+    width: 100%;
   }
 }
 
@@ -283,16 +301,19 @@ footer img {
 
 @media screen and (max-width: 600px) {
   footer h2 {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 6px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .additional-navbar {
-    display: none !important;
-  }
+@media screen and (max-width: 400px) {
 }
+
+// @media screen and (min-width: 768px) {
+//   .additional-navbar {
+//     display: none !important;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   body {
