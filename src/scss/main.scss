@@ -175,7 +175,7 @@ footer {
 }
 
 footer div {
-  padding: 4rem 1rem;
+  padding-top: 2rem;
 }
 
 footer h2 {
@@ -184,6 +184,7 @@ footer h2 {
   font-weight: 700;
   font-family: $header-font-family;
   letter-spacing: 4px;
+  padding-bottom: 0.5px;
 }
 
 footer p {
@@ -191,7 +192,10 @@ footer p {
   font-family: $header-font-family;
   font-size: 16px;
   padding-top: 1.5rem;
-  line-height: 1.5;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: -0.333px;
 }
 
 footer img {
@@ -230,17 +234,10 @@ footer img {
     right: 0;
     display: flex;
   }
-  // .mobile2 {
-  //   background-image: url(../assets/images/mobile-image-hero-2.jpg);
-  // }
-  // .mobile3 {
-  //   background-image: url(../assets/images/mobile-image-hero-3.jpg);
-  // }
 }
 
 @media only screen and (max-width: 600px) {
   .hero-section {
-    // background-image: url(../assets/mobile-image-hero-1.jpg);
     width: 100%;
   }
   .slider-title {
